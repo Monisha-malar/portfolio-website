@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - My Portfolio</title>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    body {
+        background: linear-gradient(135deg, #3a6186, #89253e, #2c3e50);
+        font-family: "Poppins", sans-serif;
+        color: white;
+        margin: 0;
+    }
+
+    /* Navigation Bar */
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    nav a {
+        text-decoration: none;
+        background-color: #d07e75;
+        color: white;
+        font-size: 1.3rem; /* Increased size */
+        font-weight: 600;
+        padding: 12px 28px; /* Bigger button size */
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    nav a:hover {
+        background-color: #a35750;
+        transform: scale(1.05);
+    }
+
+    /* Content Box */
+    .about-section {
+        max-width: 1100px;
+        margin: 50px auto;
+        background-color: rgba(0,0,0,0.6);
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Heading Box */
+    .heading-box {
+        background-color: #1f3b4d;
+        color: white;
+        font-weight: 700;
+        font-size: 1.6rem;
+        padding: 12px 25px;
+        border-radius: 8px;
+        display: inline-block;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .heading-box i {
+        margin-right: 10px;
+    }
+
+    /* Text Styling */
+    .about-section p,
+    .about-section li {
+        font-size: 1.35rem;
+        line-height: 1.9;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .about-section ul {
+        padding-left: 25px;
+    }
+
+    /* Space between sections */
+    .section-content {
+        margin-bottom: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about-section">
+
+    <!-- About Me -->
+    <div class="section-content">
+        <div class="heading-box"><i class="fas fa-user"></i> About Me</div>
+        <p>
+            I am Monisha, a B.Tech student in the Artificial Intelligence and Data Science department at 
+            KPR Institute of Engineering and Technology, Coimbatore.  
+            Coming from an agriculture family, I understand the value of hard work, dedication, and sustainable growth.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section-content">
+        <div class="heading-box"><i class="fas fa-graduation-cap"></i> Education</div>
+        <ul>
+            <li>B.Tech - AI & DS, KPR Institute of Engineering and Technology, CGPA: 8.3</li>
+            <li>HSC – St. Mary’s Girls Higher Secondary School, 92.2%</li>
+            <li>SSLC – Valluvar Vaasuki Matriculation Higher Secondary School</li>
+        </ul>
+    </div>
+
+    <!-- Interests -->
+    <div class="section-content">
+        <div class="heading-box"><i class="fas fa-lightbulb"></i> Interests</div>
+        <p>
+            Passionate about Machine Learning, Web Development, and Data Analysis.  
+            Enjoy working on creative projects and exploring AI applications in agriculture.  
+            I am also interested in UI/UX design to create visually appealing and user-friendly interfaces.  
+            In my free time, I love participating in hackathons, solving coding challenges, and learning new tools and frameworks.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>
+
+
+

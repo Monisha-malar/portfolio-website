@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - My Portfolio</title>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    body {
+        background: linear-gradient(135deg, #2c3e50, #4ca1af);
+        font-family: "Poppins", sans-serif;
+        color: white;
+        margin: 0;
+    }
+
+    /* Navigation Bar */
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    nav a {
+        text-decoration: none;
+        background-color: #d07e75;
+        color: white;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 14px 30px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    nav a:hover {
+        background-color: #a35750;
+        transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    .contact-section {
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.6);
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Heading Shape */
+    .heading-shape {
+        display: inline-block;
+        padding: 18px 40px;
+        background: #2e4a78;
+        color: white;
+        clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+    .heading-shape i {
+        margin-right: 10px;
+    }
+
+    /* Form Styling */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    input, textarea {
+        padding: 14px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        resize: none;
+    }
+    input:focus, textarea:focus {
+        box-shadow: 0 0 8px #ffcc70;
+    }
+    button {
+        background-color: #ffcc70;
+        color: black;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    button:hover {
+        background-color: #e6b64f;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <div class="heading-shape"><i class="fas fa-envelope"></i> Contact Me</div>
+
+    <!-- Replace YOUR_FORMSPREE_URL_HERE with your Formspree link -->
+    <form action="https://formspree.io/f/xvgqyzzz" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Contact Number" pattern="[0-9]{10}" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+</body>
+</html>
